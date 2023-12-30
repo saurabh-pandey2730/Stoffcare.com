@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for responsiveness */
+    margin: 0 auto; /* Center the table */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Style the top row with rowspan 2 */
+tr:first-child {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the cells in the top row with rowspan 2 */
+tr:first-child th {
+    border-right: none; /* Remove right border for the first cell */
+}
+
+/* Define a media query for responsiveness */
+@media (max-width: 768px) {
+    /* Hide the second column on small screens */
+    td:nth-child(2) {
+        display: none;
+    }
+}
